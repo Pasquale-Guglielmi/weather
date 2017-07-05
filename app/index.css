@@ -95,7 +95,7 @@ h1 {
     font-size: 14px;
     border-radius: 4px;
     width: 100px;
-    height: 30px;
+    padding: 7px 0;
     text-align: center;
     display: block;
     margin: auto 5px;
@@ -110,6 +110,10 @@ h1 {
 
 .button:active {
     transform: translateY(1px);
+}
+
+.disabled {
+    pointer-events: none;
 }
 
 .row {
@@ -157,4 +161,10 @@ h1 {
     justify-content: center;
     height: 100vh;
     background-color: rgba(252,170,64,.89)
+}
+
+.loading {
+    text-align: center;
+    font-size: 60px;
+    margin: 100px;
 }

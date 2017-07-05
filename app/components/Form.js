@@ -30,7 +30,7 @@ class Form extends React.Component {
 
     render() {
         return (
-            <form className={this.props.class} onSubmit={this.handleSubmit.bind(this)}>
+            <form className={this.props.class}>
                 <input
                     className='input'
                     placeholder={this.props.inputPlaceholder}
@@ -41,8 +41,8 @@ class Form extends React.Component {
                 </input>
                 <button
                     className='button'
-                    type='submit'
-                    disabled={!this.state.location}>
+                    disabled={!this.state.location}
+                    onClick={this.handleSubmit.bind(this)}>
                     {this.props.btnLabel}
                 </button>
             </form>
