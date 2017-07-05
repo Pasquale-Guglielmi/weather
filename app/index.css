@@ -19,6 +19,14 @@ a {
     text-decoration: none;
     color: #d0021b;
 }
+
+h1 {
+    font-size: 48px;
+    font-weight: 100;
+    color: #eee;
+    margin: 14px auto;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -87,9 +95,10 @@ a {
     font-size: 14px;
     border-radius: 4px;
     width: 100px;
+    height: 30px;
     text-align: center;
     display: block;
-    margin: 24px 5px;
+    margin: auto 5px;
 }
 
 .button:hover:enabled {
@@ -107,6 +116,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 0 6px;
+    align-items: center;
 }
 
 .column {
@@ -114,15 +124,20 @@ a {
     flex-direction: column;
     width: 500px;
     align-items: center;
+    margin: 0 auto;
 }
 
-.column input {
-    border-radius: 3px;
-    margin: 10px 0;
-    padding: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.43);
+.column input,
+.row input {
+    border: none;
     font-size: 16px;
-    width: 80%;
+    border-radius: 4px;
+    max-width: 160px;
+    display: block;
+    margin: 10px 5px;
+    padding: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    height: 44px;
 }
 
 .column label {
@@ -137,12 +152,9 @@ a {
     font-weight: bold;
 }
 
-.input {
-    border: none;
-    font-size: 16px;
-    border-radius: 4px;
-    max-width: 160px;
-    display: block;
-    margin: 20px 5px;
-    padding: 0 10px;
+.home-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(252,170,64,.89)
 }
