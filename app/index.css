@@ -156,6 +156,33 @@ h1 {
     font-weight: bold;
 }
 
+.forecast-header {
+    font-size: 60px;
+    font-weight: lighter;
+    color: #555;
+    text-align: center;
+}
+
+.forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.day-item {
+    width: 300px;
+}
+
+.day-header {
+    font-size: 30px;
+    font-weight: lighter;
+    color: #555;
+}
+
+.icon {
+    width: 100px;
+}
+
 .home-container {
     display: flex;
     justify-content: center;
