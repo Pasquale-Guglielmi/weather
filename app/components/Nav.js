@@ -1,13 +1,15 @@
 var React = require('react');
+var Form = require('./Form');
 
-class Nav extends React.Component {
-    render() {
+function Nav (props) {
         return (
-            <div>
-                Hello World!!!
+            <div className="row nav">
+                <h2 className="header">
+                    Weather
+                </h2>
+                <Form onSubmit={props.onSubmit}/>
             </div>
         )
-    }
 }
 
 module.exports = Nav;

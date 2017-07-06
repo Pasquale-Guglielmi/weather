@@ -3,6 +3,8 @@ body {
     ,BlinkMacSystemFont,Segoe
     UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica
     Neue,Sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -17,6 +19,14 @@ a {
     text-decoration: none;
     color: #d0021b;
 }
+
+h1 {
+    font-size: 48px;
+    font-weight: 100;
+    color: #eee;
+    margin: 14px auto;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -60,6 +70,8 @@ a {
 
 .nav {
     display: flex;
+    background-color: rgba(252,90,44,.89);
+    color: white;
 }
 
 .active {
@@ -77,21 +89,21 @@ a {
 }
 
 .button {
-    color: #e6e6e6;
-    background: #0a0a0a;
+    color: #eee;
+    background: #5cb85c;
     border: none;
-    font-size: 16px;
-    border-radius: 3px;
-    width: 200px;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 100px;
+    padding: 7px 0;
     text-align: center;
     display: block;
-    padding: 7px 0;
-    margin: 10px auto;
+    margin: auto 5px;
 }
 
 .button:hover:enabled {
     background:
-        linear-gradient(#1a1a1a,#0a0a0a);
+        linear-gradient(#5cb85c,#3c983c);
     color: #fff;
     text-decoration: none;
 }
@@ -100,9 +112,15 @@ a {
     transform: translateY(1px);
 }
 
+.disabled {
+    pointer-events: none;
+}
+
 .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 6px;
+    align-items: center;
 }
 
 .column {
@@ -110,15 +128,20 @@ a {
     flex-direction: column;
     width: 500px;
     align-items: center;
+    margin: 0 auto;
 }
 
-.column input {
-    border-radius: 3px;
-    margin: 10px 0;
-    padding: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.43);
+.column input,
+.row input {
+    border: none;
     font-size: 16px;
-    width: 80%;
+    border-radius: 4px;
+    max-width: 160px;
+    display: block;
+    margin: 10px 5px;
+    padding: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    height: 44px;
 }
 
 .column label {
@@ -130,5 +153,45 @@ a {
 .header {
     text-align: center;
     font-size: 30px;
-    font-weight: 200;
+    font-weight: bold;
+}
+
+.forecast-header {
+    font-size: 60px;
+    font-weight: lighter;
+    color: #555;
+    text-align: center;
+}
+
+.forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.day-item {
+    width: 300px;
+}
+
+.day-header {
+    font-size: 30px;
+    font-weight: lighter;
+    color: #555;
+}
+
+.icon {
+    width: 100px;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(252,170,64,.89)
+}
+
+.loading {
+    text-align: center;
+    font-size: 60px;
+    margin: 100px;
 }

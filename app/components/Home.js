@@ -1,13 +1,17 @@
 var React = require('react');
+var Form = require('./Form');
 
-class Home extends React.Component {
-    render() {
+function Home (props) {
         return (
-            <div>
-                Hello World!!!
+            <div className="home-container">
+                <div className="column">
+                    <h1>
+                        Enter a City and State
+                    </h1>
+                    <Form onSubmit={props.onSubmit} class='column'/>
+                </div>
             </div>
         )
-    }
 }
 
 module.exports = Home;
