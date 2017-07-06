@@ -37,7 +37,7 @@ module.exports = {
             getCurrentWeather(location),
             getForecast(location)
         ]).then(function(data) {
-            return console.log({
+            return ({
                 currentWeather: data[0],
                 forecast: data[1]
             })
